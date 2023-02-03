@@ -8,6 +8,7 @@
 
 body {
     height: 100%;
+    margin: 30px;;
 }
 
 #header {
@@ -19,3 +20,10 @@ body {
     height: 20%;
 }
 
+/*styling article */
+.articleResult {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
