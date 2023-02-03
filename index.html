@@ -11,32 +11,46 @@
 
 <body>
     <header>
-<h1 id="header">New York Times Search</h1>
+        <h1 id="header">New York Times Search</h1>
     </header>
-    <div>
-        <h2>Search Parameters</h2>
-        <form>
-            Search Term
-            <input type="search" id="search">
+
+    <div id="mainBody">
+        <h2 id="formTitle">Search Parameters</h2>
+
+        <form id="searchForm">
+            <div id="searchBox">
+                <p id="searchTitle">Search Term</p>
+                <input type="search" id="search">
+            </div>
+
             <div class="dropdown">
-                Number of records to retrieve
+                <p id="dropdownTitle">Number of records to retrieve</p>
                 <select class="dropBtn">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value="1" class="options">1</option>
+                    <option value="2" class="options">2</option>
+                    <option value="3" class="options">3</option>
+                    <option value="4" class="options">4</option>
+                    <option value="5" class="options">5</option>
                 </select>
             </div>
-            Start Year (optional)
-            <input id="startYear">
-            End Year (optional)
-            <input id="endYear">
+
+            <div id="startDiv">
+                <p id="startTitle">Start Year (optional)</p>
+                <input id="startYear">
             </div>
-    <button type="submit" id="submitBtn">Search</button>
-    <button id="clearResults">Clear Results</button>
-    </form>
+
+            <div class="endDiv">
+                <p id="endTitle">End Year (optional)</p>
+                <input id="endYear">
+            </div>
+
+            <div class="resultsDiv">
+                <button type="submit" id="submitBtn">Search</button>
+                <button id="clearResults">Clear Results</button>
+            </div>
+        </form>
     </div>
+
     <div class="articles">
 
     </div>
