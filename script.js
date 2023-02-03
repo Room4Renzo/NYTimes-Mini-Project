@@ -4,12 +4,13 @@ const dropBtn = $(`#dropBtn`);
 const startYear = $(`#startYear`);
 const endYear = $(`#endYear`);
 const clearResults = $(`clearResults`);
-const emptyvariablepush
+let option = $("option"); //creates an array, 0-indexed
 
 submitBtn.on(`click`, function (event) {
 //grabbing articles div
 let articlesDiv = $(".articles");
 let searchTerm = "";
+})
 
 submitBtn.on(`click`, function (event){
     event.preventDefault();
@@ -60,6 +61,12 @@ let queryURL =
 //need to clear results between clicks for when topic changes
 
 });
+
+//testing grabbing dropdown value
+
+// if option [i].value = 1, 2, 3, 4, 5 set querurl to limit =
+console.log(option[0].value); //returns "1"
+console.log(option[1].value); //returns "2"
 
 
 
