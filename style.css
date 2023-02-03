@@ -7,11 +7,15 @@
 
 body {
     height: 100%;
+<<<<<<< HEAD
     background-color: white;
     display:block;
 }
 form {
     display: block ;
+=======
+    margin: 30px;;
+>>>>>>> a680cb45e11efaefd784628cd98d40e7bf1569e7
 }
 
 #header {
@@ -24,6 +28,7 @@ form {
     height: 30%;
 }
 
+<<<<<<< HEAD
 #mainBody {
     display: grid;
     grid-template-areas:
@@ -56,3 +61,12 @@ form {
 
 #resultsDiv {
 } */
+=======
+/*styling article */
+.articleResult {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+>>>>>>> a680cb45e11efaefd784628cd98d40e7bf1569e7
