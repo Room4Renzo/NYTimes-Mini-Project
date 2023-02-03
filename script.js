@@ -4,16 +4,14 @@ const dropBtn = $(`#dropBtn`);
 const startYear = $(`#startYear`);
 const endYear = $(`#endYear`);
 const clearResults = $(`clearResults`);
+const emptyvariablepush
 
-<<<<<<< HEAD
 submitBtn.on(`click`, function (event) {
-=======
 //grabbing articles div
 let articlesDiv = $(".articles");
 let searchTerm = "";
 
 submitBtn.on(`click`, function (event){
->>>>>>> a680cb45e11efaefd784628cd98d40e7bf1569e7
     event.preventDefault();
     let searchTerm = searchValue.val();
     console.log(searchTerm);
@@ -62,20 +60,6 @@ let queryURL =
 //need to clear results between clicks for when topic changes
 
 });
-
-<<<<<<< HEAD
-let queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=arts&api-key=ARLR7Y6y9Zqrp8NKHTGpWCr4gIOj6L9U";
-
-
-$.ajax({
-    url: queryURL,
-    method: "GET"
-}).then(function (response) {
-    console.log(response);
-    })
-=======
-
->>>>>>> a680cb45e11efaefd784628cd98d40e7bf1569e7
 
 
 
