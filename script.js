@@ -5,6 +5,7 @@ const submitBtn = $(`#submitBtn`)
 let articlesDiv = $(".articles");
 let searchTerm = "";
 
+
 submitBtn.on(`click`, function (event){
     event.preventDefault();
     let searchTerm = searchValue.val();
@@ -47,6 +48,7 @@ let queryURL =
     articleText.text(response.response.docs[0].abstract)
     article.append(articleText);
     })
+
 
 
 //need for loop within button click that adds more results depending on dropdown number
