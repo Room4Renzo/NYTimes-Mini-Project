@@ -4,14 +4,13 @@ const startYear = $(`#startYear`);
 const endYear = $(`#endYear`);
 const clearResults = $(`clearResults`);
 let option = $("option"); //creates an array, 0-indexed
-let selection = option.value;
-let limit = "&limit="
+const limit = "&limit="
 
 // grabbing articles div
 let articlesDiv = $(".articles");
 let searchTerm = "";
 
-let i
+// let i
 
 
 // stores search term in variable
@@ -35,11 +34,19 @@ submitBtn.on(`click`, function (event) {
 
         queryURL = ("https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + "&api-key=ARLR7Y6y9Zqrp8NKHTGpWCr4gIOj6L9U" + limit + dropBtn);
 
+
+        //Empties previous results
+        let article
+        $(clearResults).on("click", function () {
+            $(articlesDiv).empty();
+        });
+
         // Loop to create the divs for requested number of article results
         for (i = 0; i < dropBtn; i++) {
 
+
             //div for single article, within Articles div
-            let article = $("<div>");
+            article = $("<div>");
             article.attr("class", "articleResult");
             articlesDiv.prepend(article);
 
@@ -57,10 +64,6 @@ submitBtn.on(`click`, function (event) {
         }
     });
 })
-
-// clear previous results
-
-//need to clear results between clicks for when topic changes
 
 // if option [i].value = 1, 2, 3, 4, 5 set querurl to limit =
 // console.log(option[0].value); //returns "1"
