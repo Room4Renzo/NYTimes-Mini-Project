@@ -5,7 +5,7 @@ let option = $("option"); //creates an array, 0-indexed
 const limit = "&limit="
 
 // grabbing articles div
-let articlesDiv = $(".articles");
+let articlesDiv = $("#articlesList");
 let searchTerm = "";
 
 let startYearVal = $(`#startYear`).val();
