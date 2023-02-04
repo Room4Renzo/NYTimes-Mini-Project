@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/9b94255d42.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
-    <title>NY Times ARticle Search</title>
+    <title>Document</title>
 </head>
 
 <body>
     <header>
-        <h1 id="header">
-            <i class="fa-regular fa-newspaper fa-1x" 
-            style="color: white"></i> New York Times Search</h1>
+        <h1 id="header">New York Times Search</h1>
     </header>
 
     <div id="mainBody">
@@ -22,12 +19,12 @@
 
         <form id="searchForm">
             <div id="searchBox">
-                <p id="searchTitle">Search Term:</p>
+                <p id="searchTitle">Search Term</p>
                 <input type="search" id="search">
             </div>
 
             <div class="dropdown">
-                <p id="dropdownTitle">Number of records to retrieve:</p>
+                <p id="dropdownTitle">Number of records to retrieve</p>
                 <select class="dropBtn">
                     <option value="1" class="options">1</option>
                     <option value="2" class="options">2</option>
@@ -38,46 +35,26 @@
             </div>
 
             <div id="startDiv">
-                <p id="startTitle">Start Year (optional):</p>
-                <i class="fa-regular fa-calendar-days"></i>
+                <p id="startTitle">Start Year (optional)</p>
+                <img src="./Images/Calendar 50.png" id="calendar">
                 <input id="startYear">
             </div>
 
             <div class="endDiv">
-                <p id="endTitle">End Year (optional):</p>
-                <i class="fa-regular fa-calendar-days"></i>
+                <p id="endTitle">End Year (optional)</p>
                 <input id="endYear">
             </div>
 
             <div class="resultsDiv">
-                <button type="submit" id="submitBtn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    Search</button>
-                <button id="clearResults">
-                    <i class="fa-solid fa-trash-can"
-                    style="color: red;"></i>
-                    Clear Results</button>
+                <button type="submit" id="submitBtn">Search</button>
+                <button id="clearResults">Clear Results</button>
             </div>
         </form>
     </div>
 
     <div class="articles">
-            <div id = "articleTitleDiv">
-            <h2 id="articlesTitle">
-                <i class="fa-regular fa-newspaper"></i>
-                Top Articles</h2>
-            </div>
-            <div id="articlesList">
-                <!-- articles go here-->
-            </div>
+
     </div>
-    <footer id="footer">
-        <p id="footer-text">
-            <i class="fa-solid fa-computer" id="footer-icon"></i> 
-            Made by Lorenzo and Jennifer 
-            <i class="fa-solid fa-robot" id="footer-icon"></i>
-        </p>
-    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
