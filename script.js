@@ -3,34 +3,24 @@ const submitBtn = $(`#submitBtn`);
 const clearResults = $(`#clearResults`);
 let option = $("option"); //creates an array, 0-indexed
 const limit = "&limit="
-const calendar = $(`#calendar`);
 
 // grabbing articles div
 let articlesDiv = $("#articlesList");
 let searchTerm = "";
 
+// storing valuof dates in start and end date fields
 let startYearVal = $(`#startYear`).val();
 let endYearVal = $(`#endYear`).val();
 let startYear = $(`#startYear`);
+let endYear = $(`#endYear`);
 
 
-// $(startYear).datepicker.setDefaults(
-//     showOn: "click",
-//     buttonImageOnly: true,
-//     buttonImage: "./Images/Calendar 50.png",
-//     buttonText: "Calendar"
-// );
-
-let datePicker = $(function(){
-    
-    return;
-})
-$(startYear).on(`click`, function(){
-    calendar.datepicker;
-    console.log(`Hey`)
-
-})
-
+let fromYear = $(function () {
+    $(startYear).datepicker();
+});
+let toYear = $(function () {
+    $(startYear).datepicker();
+});
 
 
 // stores search term in variable
