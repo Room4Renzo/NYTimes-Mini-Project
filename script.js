@@ -6,7 +6,7 @@ const limit = "&limit="
 const calendar = $(`#calendar`);
 
 // grabbing articles div
-let articlesDiv = $("#articlesList");
+let articlesDiv = $(".articles");
 let searchTerm = "";
 
 let startYearVal = $(`#startYear`).val();
