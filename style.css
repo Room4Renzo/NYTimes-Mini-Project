@@ -28,8 +28,8 @@ form {
 #mainBody {
     display: grid;
     grid-template-areas:
-    "formTitle"
-    "searchForm";
+    "formTitle formTitle"
+    "searchForm searchForm";
     width: 100%;
 }
 
@@ -40,6 +40,9 @@ form {
 
 #formTitle {
     grid-area: formTitle;
+}
+#startDiv {
+    display: block;
 }
 
 /* #searchBox {

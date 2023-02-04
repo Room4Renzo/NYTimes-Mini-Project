@@ -3,7 +3,6 @@ const submitBtn = $(`#submitBtn`);
 const clearResults = $(`#clearResults`);
 let option = $("option"); //creates an array, 0-indexed
 const limit = "&limit="
-const calendar = $(`#calendar`);
 
 // grabbing articles div
 let articlesDiv = $(".articles");
@@ -21,17 +20,15 @@ let startYear = $(`#startYear`);
 //     buttonText: "Calendar"
 // );
 
-let datePicker = $(function(){
-    
-    return;
-})
-$(startYear).on(`click`, function(){
-    calendar.datepicker;
-    console.log(`Hey`)
-
+let startDate = $(function() {
+    $(startYear).datepicker({
+        dateFormat: `yy-mm-dd`,
+        changeMonth: true,
+        changeYear: true
+    });
 })
 
-
+console.log(startDate);
 
 // stores search term in variable
 submitBtn.on(`click`, function (event) {
@@ -88,7 +85,7 @@ submitBtn.on(`click`, function (event) {
         // })
         //Testing search fields with console logs
         console.log(response)
-        console.log(response.response.docs[0].pub_date)
+        // console.log(response.response.docs[0].pub_date)
 
     })
 
