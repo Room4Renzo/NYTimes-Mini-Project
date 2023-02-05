@@ -15,12 +15,12 @@ let startYear = $(`#startYear`);
 let endYear = $(`#endYear`);
 
 
-let fromYear = $(function () {
-    $(startYear).datepicker();
-});
-let toYear = $(function () {
-    $(startYear).datepicker();
-});
+// let fromYear = $(function () {
+//     $(startYear).datepicker();
+// });
+// let toYear = $(function () {
+//     $(startYear).datepicker();
+// });
 
 
 // stores search term in variable
@@ -30,10 +30,10 @@ submitBtn.on(`click`, function (event) {
 
 
 
-
+    // "https://api.nytimes.com/svc/search/v2/articlesearch.json?begin_date=20120101&end_date=20120202&api-key=[YOUR_API_KEY]"
 
     //changing url from test to article search API proper
-    let queryURL = ("https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + "&api-key=ARLR7Y6y9Zqrp8NKHTGpWCr4gIOj6L9U");
+    let queryURL = ("https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + "&begin_date=" + startYearVal + "&end_date=" + endYearVal + "&api-key=ARLR7Y6y9Zqrp8NKHTGpWCr4gIOj6L9U");
 
 
     //retrieving data via ajax first
